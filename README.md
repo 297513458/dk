@@ -46,3 +46,8 @@ ADD ${JAR_FILE} /app/app.jar
 WORKDIR /app/
 EXPOSE 8080
 ENTRYPOINT ["/usr/bin/java","-jar","./app.jar"]
+命令,不处理docker:mvn clean package -Ddockerfile.skip
+编译mvn clean package dockerfile:build
+发布mvn clean package dockerfile:push或mvn clean deploy
+
+				</executions>
