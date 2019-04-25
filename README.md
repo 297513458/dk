@@ -1,6 +1,7 @@
-先在pom.xml加上插件,
-注意:<repository>docker服务器地址(默认docker.io)/docker注册名称/具体名称</repository>(docker服务器地址的值需要在settings.xml里有对应的配置,否则无法push到docker服务器)
-<plugin>
+ # pom配置
+ 先在pom.xml加上插件,
+	注意:<repository>docker服务器地址(默认docker.io)/docker注册名称/具体名称</repository>(docker服务器地址的值需要在settings.xml里有对应的配置,否则无法push到docker服务器)
+ <plugin>
 				<groupId>com.spotify</groupId>
 				<artifactId>dockerfile-maven-plugin</artifactId>
 				<version>1.4.10</version>
@@ -23,6 +24,7 @@
 					</buildArgs>
 				</configuration>
 			</plugin>
+   # settings.xml配置
    docker服务器的用户名密码配置
    id和上面的docker服务器地址地址一致
    	 <server>
