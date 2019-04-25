@@ -10,7 +10,7 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>dkkin</artifactId>
+	<artifactId>dk</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>demo</name>
 	<description>docker push</description>
@@ -79,7 +79,6 @@
 				</executions>
 				<configuration>
 					<useMavenSettingsForAuth>true</useMavenSettingsForAuth>
-					<repository>docker.io</repository>
 					<googleContainerRegistryEnabled>false </googleContainerRegistryEnabled>
 					<repository>${docker.registry.name}/${project.artifactId}</repository>
 					<tag>latest</tag>
