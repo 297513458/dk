@@ -25,8 +25,8 @@
 			<JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>
 		</buildArgs>
 	</configuration>
-</plugin></pre>	
-   # settings.xml配置
+</plugin></pre>
+# settings.xml配置
    docker服务器的用户名密码配置
    id和上面的docker服务器地址地址一致
    <pre>
@@ -40,7 +40,7 @@
       <username>297513458</username>
       <password>密码</password>
     </server>
-    </pre>
+</pre>
 在pom.xml同级目录加上Dockerfile
 # dockerfile 基础配置
 <pre>
