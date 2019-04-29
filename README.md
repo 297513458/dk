@@ -1,4 +1,5 @@
  # pom配置
+ <pre>
  先在pom.xml加上插件,
 	注意:<repository>docker服务器地址(默认docker.io)/docker注册名称/具体名称</repository>(docker服务器地址的值需要在settings.xml里有对应的配置,否则无法push到docker服务器)
  <plugin>
@@ -91,3 +92,4 @@ node {
         '''
    }
 }
+</pre>
