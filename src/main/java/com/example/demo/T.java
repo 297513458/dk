@@ -27,12 +27,16 @@ public class T {
 		return "t";
 	}
 
+	public static DemoService service;
+
 	public static String ak() {
+		if (service == null) {
 			ReferenceConfig<DemoService> reference = new ReferenceConfig<>();
 			reference.setApplication(new ApplicationConfig("dubbo-demo-api-consumer"));
 			reference.setRegistry(new RegistryConfig("zookeeper://192.168.0.167:2181"));
 			reference.setInterface(DemoService.class);
-			DemoService service = reference.get();
-			return service.sayHello("测试");
+			service = reference.get();
+		}
+		return service.sayHello("测试");
 	}
 }
