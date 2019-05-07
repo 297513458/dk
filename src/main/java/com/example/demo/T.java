@@ -28,7 +28,6 @@ public class T {
 	}
 
 	public static DemoService service;
-
 	public static String ak() {
 		if (service == null) {
 			ReferenceConfig<DemoService> reference = new ReferenceConfig<>();
