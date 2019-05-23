@@ -32,7 +32,7 @@ public class T {
 		if (service == null) {
 			ReferenceConfig<DemoService> reference = new ReferenceConfig<>();
 			reference.setApplication(new ApplicationConfig("dubbo-demo-api-consumer"));
-			reference.setRegistry(new RegistryConfig("zookeeper://192.168.0.167:2181"));
+			reference.setRegistry(new RegistryConfig("zookeeper://192.168.0.156:2181"));
 			reference.setInterface(DemoService.class);
 			service = reference.get();
 		}
