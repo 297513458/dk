@@ -1,3 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: ingress-nginx
+  namespace: default
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+spec:
+  rules:
+  - host: myapp.klvchen.com
+    http:
+      paths:
+      - path:
+        backend:
+          serviceName: myapp
+          servicePort: 8008
  # pom配置
  <pre>
  先在pom.xml加上插件,
